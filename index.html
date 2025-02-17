@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,8 +7,11 @@
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Font: Raleway -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Font: Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- daisyUI & tailwind -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
@@ -28,7 +31,22 @@
       };
     </script>
   </head>
-<body class="poppins">
-  
-</body>
+  <body
+    class="poppins min-h-screen bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ..."
+  >
+    <div class="w-10/12 mx-auto pt-3">
+      <div class="flex items-center mb-5">
+        <img class="w-16" src="./images/notes.png" alt="" />
+        <h2 class="text-3xl font-bold mb-3 text-white">Notes</h2>
+      </div>
+
+      <button id="create-btn" class="btn bg-purple-700 text-white mb-5">
+        <img class="w-3 h-3" src="./images/edit.png" alt="" />Create Notes
+      </button>
+
+      <div id="notes-container"></div>
+
+    </div>
+    <script src="./index.js"></script>
+  </body>
 </html>
